@@ -73,7 +73,7 @@ public class ArrayUtil extends PrimitiveArrayUtil {
 	 */
 	public static boolean isEmpty(Object array) {
 		if (array != null) {
-			if (isArray(array)) {
+			if (array.getClass().isArray) {
 				return 0 == Array.getLength(array);
 			}
 			return false;
